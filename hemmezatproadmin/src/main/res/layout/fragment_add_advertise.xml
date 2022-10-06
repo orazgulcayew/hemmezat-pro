@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="56dp"
+    tools:context=".NavigationFragments.AddAdvertiseFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"
+            android:text="Häzirki reklamalar: "/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="Reklama goş"
+            android:layout_gravity="center"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_camera_plus"
+            android:fontFamily="@font/dmsans_bold"
+            android:textAllCaps="false"
+            android:drawablePadding="8dp"
+            android:drawableTint="@color/green_500"
+            android:id="@+id/pick_image"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/newItemsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:clipToPadding="false"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_height="60dp"
+            android:text="Tassykla"
+            android:drawableEnd="@drawable/ic_check"
+            android:drawableTint="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/dmsans_bold"
+            android:id="@+id/accept"/>
+
+    </LinearLayout>
+</RelativeLayout>

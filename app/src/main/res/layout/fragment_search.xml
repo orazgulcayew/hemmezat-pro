@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_layout"
+    android:layout_marginTop="56dp"
+    tools:context=".NavigationFragments.SearchFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/search_button_bg"
+                android:drawableStart="@drawable/ic_search"
+                android:drawablePadding="16dp"
+                android:imeOptions="actionSearch"
+                android:drawableTint="@color/grey_200"
+                android:focusedByDefault="true"
+                android:fontFamily="@font/dmsans_regular"
+                android:hint="Gözle..."
+                android:inputType="text"
+                android:padding="16dp"
+                android:textColorHint="@color/grey_200" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:drawableStart="@drawable/ic_filter"
+                android:drawablePadding="12dp"
+                android:fontFamily="@font/dmsans_regular"
+                android:text="Filter"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/filter_chip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:chipSpacingHorizontal="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/filter_all"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Ählisi" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/filter_price_high"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brendler" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/filter_price_lower"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elýeterliler" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/filter_new"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Täze goýulanlar" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/filter_old"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Köne goýulanlar" />
+                </com.google.android.material.chip.ChipGroup>
+            </HorizontalScrollView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:id="@+id/recyclerView"/>
+
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="Baş sahypa"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/nav_search"
+            android:title="Gözleg"
+            android:icon="@drawable/ic_search"/>
+        <item android:id="@+id/nav_categories"
+            android:title="Bildirişler"
+            android:icon="@drawable/ic_bell"/>
+        <item android:id="@+id/nav_add_product"
+            android:title="Bildiriş goşmak"
+            android:icon="@drawable/ic_plus_square"/>
+    </group>
+        <item android:title="Goşmaça">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_settings"
+                    android:title="Sazlamalar"
+                    android:icon="@drawable/ic_settings"/>
+                <item android:id="@+id/nav_logout"
+                    android:title="Hasapdan çyk"
+                    android:icon="@drawable/ic_log_out"/>
+                </group>
+            </menu>
+        </item>
+</menu>

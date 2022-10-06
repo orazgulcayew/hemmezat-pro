@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Oraz/.gradle/caches/transforms-3/c94ffcd4f0c1ffc47bbdb5884c1de5f6/transformed/Toasty-1.5.2/res/layout/toast_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable-v24/dialog_bg.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.108" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/corner_radius_shape.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/dashboard_products_bg.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_arrow_left.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_bell.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_check.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_chevron_left.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_chevron_right.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_chevrons_left.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_eye.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_filter.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_home.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_image.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_info.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_log_out.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_menu.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_menu_variant.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_plus_square.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_search.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_settings.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_trash.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_trash_2.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_x.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/search_button_bg.xml" value="0.1635" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/switch_thumb.xml" value="0.1465" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/activity_otp.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/activity_start.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/card.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/card_list.xml" value="0.33" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/categories_list.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_add_product.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_categories.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_category_select.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_my_products.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_product_details.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_search.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_sub_categories.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/header.xml" value="0.2" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/image_container.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/info_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/logout_dialog.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/my_product_item_list.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/picked_image.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/product_item_list.xml" value="0.33" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/spinner_text.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable-v24/dialog_bg.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/corner_radius_shape.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/ic_bell.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/ic_check.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/ic_clock.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/ic_edit.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/ic_eye.xml" value="0.108" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/ic_x.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/drawable/logo.xml" value="0.1835" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/activity_main.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/activity_otp.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/activity_start.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/card.xml" value="0.33" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/content_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_add_product.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_categories.xml" value="0.18" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_edit.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_my_products.xml" value="0.22" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_product_details.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_search.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_waitin_products.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/image_container.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/my_product_item_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/picked_image.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/product_item_list.xml" value="0.25" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/spinner_text.xml" value="0.1" />
+        <entry key="..\:/Users/Oraz/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/shutdown_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Oraz/AppData/Local/Android/Sdk/platforms/android-30/data/res/layout/simple_list_item_1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/app/src/main/res/drawable/ic_chevrons_up.xml" value="0.215" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/card_list.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_add_product.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/fragment_search.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/app/src/main/res/layout/item_chip_category.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/activity_update_documents.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/card.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_add_advertise.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_add_product.xml" value="0.35555555555555557" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_categories.xml" value="0.13240740740740742" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_edit.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_home.xml" value="0.1436016213086277" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_my_products.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/fragment_search.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/my_product_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/layout/product_item_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Hemmezat/hemmezatproadmin/src/main/res/menu/main_menu.xml" value="0.35555555555555557" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

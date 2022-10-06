@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Hemmezat Pro</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="navigation_drawer_open">Open</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about">Programa barada ýazgy</string>
+    <string name="hasapdan_cyk_text">Siz ulanyjy hasabyňyzdan çykmak isleýärsiňizmi?</string>
+    <string name="hasapdan_cykmak">Hasapdan çykmak</string>
+
+
+    <string-array name="location">
+        <item>Saýlanmadyk</item>
+        <item>Aşgabat</item>
+        <item>Balkan</item>
+        <item>Ahal</item>
+        <item>Mary</item>
+        <item>Lebap</item>
+        <item>Daşoguz</item>
+    </string-array>
+    <string-array name="product_type">
+        <item>Saýlanmadyk</item>
+        <item>Ikinji el</item>
+        <item>Haryt</item>
+    </string-array>
+
+    <string-array name="currencies">
+        <item>TMT</item>
+        <item>TL</item>
+        <item>USD</item>
+        <item>EUR</item>
+        <item>RUB</item>
+        <item>YEN</item>
+    </string-array>
+
+</resources>

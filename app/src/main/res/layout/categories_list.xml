@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    app:cardElevation="0dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?selectableItemBackground"
+    android:id="@+id/main_category_holder"
+    android:layout_height="60dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_100"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefonlar"
+            android:id="@+id/main_category_name"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:layout_marginStart="24dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:fontFamily="@font/dmsans_medium" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_chevron_right"
+            android:layout_gravity="center"
+            app:tint="@color/black"
+            android:layout_marginEnd="24dp"/>
+    </LinearLayout>
+</RelativeLayout>

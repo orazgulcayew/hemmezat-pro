@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -21,8 +21,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gocreative.tm.hemmezat.Adapters.AllProductsAdapter;
-import com.gocreative.tm.hemmezat.Models.AllProducts;
+import com.gocreative.team.hemmezat.Adapters.AllProductsAdapter;
+import com.gocreative.team.hemmezat.Models.AllProducts;
 import com.gocreative.tm.hemmezat.R;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.chip.Chip;

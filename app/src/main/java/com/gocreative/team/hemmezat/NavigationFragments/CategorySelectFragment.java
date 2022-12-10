@@ -1,88 +1,89 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gocreative.tm.hemmezat.Adapters.MyProductsAdapter;
-import com.gocreative.tm.hemmezat.Models.AllProducts;
+import com.gocreative.team.hemmezat.Adapters.CategoriesAdapter;
+import com.gocreative.team.hemmezat.Models.Category;
+import com.gocreative.tm.hemmezat.Constants;
 import com.gocreative.tm.hemmezat.R;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
-public class MyProductsFragment extends Fragment {
-    String userUid;
+public class CategorySelectFragment extends Fragment {
     FirebaseFirestore firestore;
     CollectionReference collectionReference;
+    CategoriesAdapter categoriesAdapter;
     RecyclerView recyclerView;
-    MyProductsAdapter allProductsAdapter;
-    ArrayList<AllProducts> allProductsArrayList;
-
-    int itemSize;
-    LinearLayout noData;
+    ArrayList<Category> categoryArrayList;
+    ProgressDialog progressDialog;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_my_products, container, false);
+        View view = inflater.inflate(R.layout.fragment_category_select, container, false);
 
-        userUid = getArguments().getString("userUid");
-        noData = view.findViewById(R.id.no_data);
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Biraz garaşyň...");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
 
-        recyclerView = view.findViewById(R.id.my_products_fragment_recycler);
+        recyclerView = view.findViewById(R.id.categories_recycler);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         firestore = FirebaseFirestore.getInstance();
-        collectionReference = firestore.collection("users").document(userUid).collection("user_products");
+        collectionReference=firestore.collection(Constants.ADMIN).document(Constants.CATEGORIES).collection(Constants.MAIN_CATEGORIES);;
 
-        allProductsArrayList = new ArrayList<AllProducts>();
-        allProductsAdapter = new MyProductsAdapter(getContext(), allProductsArrayList);
+        categoryArrayList = new ArrayList<Category>();
+        categoriesAdapter = new CategoriesAdapter(getContext(), categoryArrayList);
 
-        recyclerView.setAdapter(allProductsAdapter);
+        recyclerView.setAdapter(categoriesAdapter);
         eventChangeListener();
-
 
         return view;
     }
 
     private void eventChangeListener() {
-        collectionReference.orderBy("date_created", Query.Direction.DESCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
+        collectionReference.addSnapshotListener(new EventListener<QuerySnapshot>() {
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (error != null){
+                    if (progressDialog.isShowing()){
+                        progressDialog.dismiss();
+                    }
                     Log.d("firebase firestore", "onEvent: " + error.getMessage());
                     return;
                 }
                 for (DocumentChange documentChange : value.getDocumentChanges()){
                     if (documentChange.getType() == DocumentChange.Type.ADDED){
-                        itemSize++;
-                        allProductsArrayList.add(documentChange.getDocument().toObject(AllProducts.class));
-                        allProductsAdapter.notifyDataSetChanged();
+                        categoryArrayList.add(documentChange.getDocument().toObject(Category.class));
                     }
-                }
-                if (itemSize == 0){
-                    noData.setVisibility(View.VISIBLE);
-                }else{
-                    noData.setVisibility(View.GONE);
+                    categoriesAdapter.notifyDataSetChanged();
+
+                    if (progressDialog.isShowing()){
+                        progressDialog.dismiss();
+                    }
                 }
             }
         });
     }
+
+
 }

@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gocreative.tm.hemmezat.Adapters.ImageAdapter;
-import com.gocreative.tm.hemmezat.Models.Image;
+import com.gocreative.team.hemmezat.Adapters.ImageAdapter;
+import com.gocreative.team.hemmezat.Models.Image;
 import com.gocreative.tm.hemmezat.R;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.firebase.firestore.DocumentReference;

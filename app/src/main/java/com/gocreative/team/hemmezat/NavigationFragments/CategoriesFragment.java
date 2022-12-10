@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,8 +15,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gocreative.tm.hemmezat.Adapters.AllProductsAdapter;
-import com.gocreative.tm.hemmezat.Models.AllProducts;
+import com.gocreative.team.hemmezat.Adapters.AllProductsAdapter;
+import com.gocreative.team.hemmezat.Models.AllProducts;
 import com.gocreative.tm.hemmezat.R;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentChange;

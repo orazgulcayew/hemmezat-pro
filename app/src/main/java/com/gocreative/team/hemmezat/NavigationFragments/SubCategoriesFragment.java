@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
@@ -12,10 +12,10 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gocreative.tm.hemmezat.Adapters.SubCategoriesAdapter;
+import com.gocreative.team.hemmezat.Adapters.SubCategoriesAdapter;
+import com.gocreative.team.hemmezat.Models.Category;
+import com.gocreative.team.hemmezat.Models.SubCategory;
 import com.gocreative.tm.hemmezat.Constants;
-import com.gocreative.tm.hemmezat.Models.Category;
-import com.gocreative.tm.hemmezat.Models.SubCategory;
 import com.gocreative.tm.hemmezat.R;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;

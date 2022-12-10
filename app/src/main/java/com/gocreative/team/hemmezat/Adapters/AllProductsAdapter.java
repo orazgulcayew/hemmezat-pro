@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.Adapters;
+package com.gocreative.team.hemmezat.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,10 +16,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gocreative.team.hemmezat.Models.AllProducts;
+import com.gocreative.team.hemmezat.NavigationFragments.CategoriesFragment;
+import com.gocreative.team.hemmezat.NavigationFragments.ProductDetailsFragment;
 import com.gocreative.team.hemmezat.R;
-import com.gocreative.tm.hemmezat.Models.AllProducts;
-import com.gocreative.tm.hemmezat.NavigationFragments.CategorySelectFragment;
-import com.gocreative.tm.hemmezat.NavigationFragments.ProductDetailsFragment;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -29,35 +29,41 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdapter.AllProductsViewHolder> {
+public class AllProductsAdapter extends RecyclerView.Adapter<AllProductsAdapter.AllProductsViewHolder> {
     Context context;
     ArrayList<AllProducts> allProductsArrayList;
     String dateToSend;
+    private CategoriesFragment.OnListItemClick onListItemClick;
 
-    public AdminProductsAdapter(Context context, ArrayList<AllProducts> allProductsArrayList) {
+    public AllProductsAdapter(Context context, ArrayList<AllProducts> allProductsArrayList) {
         this.context = context;
         this.allProductsArrayList = allProductsArrayList;
     }
 
     @NonNull
     @Override
-    public AllProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_list, parent, false);
+    public AllProductsAdapter.AllProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.product_item_list, parent, false);
         return new AllProductsViewHolder(view);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onBindViewHolder(@NonNull AllProductsViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull AllProductsAdapter.AllProductsViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onListItemClick.onClick(view, holder.getBindingAdapterPosition()); // passing click to interface
+            }
+        });
+
         String price = Float.toString(allProductsArrayList.get(position).getPrice());
         String firstImageUrl = allProductsArrayList.get(position).getImages().get(0);
         holder.nameView.setText(allProductsArrayList.get(position).getName());
         holder.priceView.setText(allProductsArrayList.get(position).getCurrency() + " " + price);
-        holder.locationV.setText(allProductsArrayList.get(position).getLocation());
         holder.typeV.setText(allProductsArrayList.get(position).getType());
 
         holder.viewedV.setText(Long.toString(allProductsArrayList.get(position).getViewed()));
-
 
         Picasso.get().load(firstImageUrl)
                 .placeholder(R.drawable.ic_image)
@@ -96,6 +102,7 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
 
+
                 bundle.putStringArrayList("imageUrls", (ArrayList<String>) allProductsArrayList.get(position).getImages());
                 bundle.putString("date", finalSetDate);
                 bundle.putString("name", allProductsArrayList.get(position).getName());
@@ -105,12 +112,14 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
                 bundle.putString("phone",  allProductsArrayList.get(position).getPhone_number());
                 bundle.putString("sub_category",  allProductsArrayList.get(position).getSub_category());
                 bundle.putString("owner_uid",  allProductsArrayList.get(position).getOwner_uid());
+                bundle.putString("product_uid",  allProductsArrayList.get(position).getProduct_id());
                 bundle.putString("type",  allProductsArrayList.get(position).getType());
                 bundle.putFloat("price", allProductsArrayList.get(position).getPrice());
-                bundle.putString("product_uid", allProductsArrayList.get(position).getProduct_id());
-                bundle.putBoolean("is_admin", allProductsArrayList.get(position).isAdmin());
                 bundle.putLong("viewed", allProductsArrayList.get(position).getViewed());
-                bundle.putString("currency", allProductsArrayList.get(position).getCurrency());
+                bundle.putBoolean("is_admin", allProductsArrayList.get(position).isAdmin());
+                bundle.putString("currency",  allProductsArrayList.get(position).getCurrency());
+
+
 
                 ProductDetailsFragment productDetailsFragment = new ProductDetailsFragment();
                 productDetailsFragment.setArguments(bundle);
@@ -118,7 +127,7 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
                 FragmentManager manager = ((AppCompatActivity)v.getContext()).getSupportFragmentManager();
                 manager.beginTransaction()
                         .replace(R.id.fragment_container, productDetailsFragment)
-                        .addToBackStack(CategorySelectFragment.class.getSimpleName())
+                        .addToBackStack(CategoriesFragment.class.getSimpleName())
                         .commit();
             }
         });
@@ -136,7 +145,7 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
     }
 
     public class AllProductsViewHolder extends RecyclerView.ViewHolder {
-        TextView nameView, priceView, typeV, locationV, viewedV;
+        TextView nameView, priceView, typeV, viewedV;
         ImageView productImageView;
 
         public AllProductsViewHolder(@NonNull View itemView) {
@@ -146,7 +155,6 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
             productImageView = itemView.findViewById(R.id.product_image);
             typeV = itemView.findViewById(R.id.product_type);
             viewedV = itemView.findViewById(R.id.viewed);
-            locationV = itemView.findViewById(R.id.location);
 
         }
     }
@@ -155,5 +163,9 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
                 "Aprel", "Maý", "Iýun", "Iýul", "Awgust",
                 "Sentýabr", "Oktýabr", "Noýabr", "Dekabr"};
         return monthNames[Integer.parseInt(month)-1];
+    }
+
+    public void setClickListener(CategoriesFragment.OnListItemClick context) {
+        this.onListItemClick = context;
     }
 }

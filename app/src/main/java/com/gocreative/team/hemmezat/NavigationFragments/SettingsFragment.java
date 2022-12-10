@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
 import static android.content.Context.ACTIVITY_SERVICE;
 

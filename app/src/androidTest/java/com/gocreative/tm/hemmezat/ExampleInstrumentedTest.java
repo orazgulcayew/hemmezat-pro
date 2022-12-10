@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat;
+package com.gocreative.team.hemmezat;
 
 import android.content.Context;
 

@@ -2,7 +2,6 @@ package com.gocreative.tm.hemmezat.Adapters;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
-import com.firebase.ui.firestore.FirestoreRecyclerOptions;
+import com.gocreative.team.hemmezat.R;
 import com.gocreative.tm.hemmezat.Models.Category;
-import com.gocreative.tm.hemmezat.NavigationFragments.AddProductFragment;
 import com.gocreative.tm.hemmezat.NavigationFragments.CategorySelectFragment;
 import com.gocreative.tm.hemmezat.NavigationFragments.SubCategoriesFragment;
-import com.gocreative.tm.hemmezat.R;
 
 import java.util.ArrayList;
 

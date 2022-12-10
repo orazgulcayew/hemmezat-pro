@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.Adapters;
+package com.gocreative.team.hemmezat.Adapters;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,20 +13,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gocreative.team.hemmezat.Models.Category;
+import com.gocreative.team.hemmezat.NavigationFragments.CategorySelectFragment;
+import com.gocreative.team.hemmezat.NavigationFragments.SubCategoriesFragment;
 import com.gocreative.team.hemmezat.R;
-import com.gocreative.tm.hemmezat.Models.SubCategory;
-import com.gocreative.tm.hemmezat.NavigationFragments.AddProductFragment;
-import com.gocreative.tm.hemmezat.NavigationFragments.CategorySelectFragment;
 
 import java.util.ArrayList;
 
 
-public class SubCategoriesAdapter extends RecyclerView.Adapter<SubCategoriesAdapter.CategoriesViewHolder> {
+public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.CategoriesViewHolder> {
 
     Context context;
-    ArrayList<SubCategory> categoryArrayList;
+    ArrayList<Category> categoryArrayList;
 
-    public SubCategoriesAdapter(Context context, ArrayList<SubCategory> categoryArrayList) {
+    public CategoriesAdapter(Context context, ArrayList<Category> categoryArrayList) {
         this.context = context;
         this.categoryArrayList = categoryArrayList;
     }
@@ -40,27 +40,24 @@ public class SubCategoriesAdapter extends RecyclerView.Adapter<SubCategoriesAdap
 
     @Override
     public void onBindViewHolder(@NonNull CategoriesViewHolder holder, int position) {
-        SubCategory category = categoryArrayList.get(position);
+        Category category = categoryArrayList.get(position);
         holder.textView.setText(category.getMain_name());
         holder.relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 String categoryName = category.getMain_name();
-                String subCategoryName = category.getUpper_main_name();
-                bundle.putString("subCategoryName", categoryName);
-                bundle.putString("categoryName", subCategoryName);
-                AddProductFragment addProductFragment = new AddProductFragment();
-                addProductFragment.setArguments(bundle);
+                bundle.putString("categoryName", categoryName);
 
+                SubCategoriesFragment subCategoriesFragment = new SubCategoriesFragment();
+                subCategoriesFragment.setArguments(bundle);
                 FragmentManager manager = ((AppCompatActivity)v.getContext()).getSupportFragmentManager();
                 manager.beginTransaction()
-                        .replace(R.id.fragment_container, addProductFragment)
+                        .replace(R.id.fragment_container, subCategoriesFragment)
                         .addToBackStack(CategorySelectFragment.class.getSimpleName())
                         .commit();
             }
         });
-
     }
 
     @Override
@@ -68,7 +65,7 @@ public class SubCategoriesAdapter extends RecyclerView.Adapter<SubCategoriesAdap
         return categoryArrayList.size();
     }
 
-    public static class CategoriesViewHolder extends RecyclerView.ViewHolder {
+    public class CategoriesViewHolder extends RecyclerView.ViewHolder {
         TextView textView;
         RelativeLayout relativeLayout;
         public CategoriesViewHolder(@NonNull View itemView) {

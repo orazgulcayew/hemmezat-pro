@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.gocreative.tm.hemmezatproadmin"
+        applicationId "com.gocreative.team.hemmezatproadmin"
         minSdk 21
         multiDexEnabled true
         targetSdk 31

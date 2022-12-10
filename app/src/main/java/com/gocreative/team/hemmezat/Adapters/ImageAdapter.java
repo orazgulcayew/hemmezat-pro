@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.Adapters;
+package com.gocreative.team.hemmezat.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,8 +9,8 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gocreative.team.hemmezat.Models.Image;
 import com.gocreative.team.hemmezat.R;
-import com.gocreative.tm.hemmezat.Models.Image;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

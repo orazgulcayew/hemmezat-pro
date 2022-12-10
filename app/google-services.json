@@ -9,10 +9,18 @@
       "client_info": {
         "mobilesdk_app_id": "1:343414629232:android:ea9988b11b5b89b9a4e5b5",
         "android_client_info": {
-          "package_name": "com.gocreative.tm.hemmezat"
+          "package_name": "com.gocreative.team.hemmezat"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "343414629232-1eo3mu3poco7kovfarqgaomod0l7ero6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gocreative.team.hemmezat",
+            "certificate_hash": "23095806e9e917e9b3b769ada14d74859ce0bcfd"
+          }
+        },
         {
           "client_id": "343414629232-3pitmk7gtb8jmfmdarkl0edhvun60ug4.apps.googleusercontent.com",
           "client_type": 1,
@@ -27,6 +35,14 @@
           "android_info": {
             "package_name": "com.gocreative.tm.hemmezat",
             "certificate_hash": "fdf6f59989ca394b9d69fc870060d64e2f6eb0b4"
+          }
+        },
+        {
+          "client_id": "343414629232-e065i1fsjc7vqcpp9j1djvidtvqj1j72.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gocreative.tm.hemmezat",
+            "certificate_hash": "9d9bb64ee5babef1ed1e210f939f57a5b56b6b82"
           }
         },
         {

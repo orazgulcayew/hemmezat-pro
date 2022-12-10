@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.NavigationFragments;
+package com.gocreative.team.hemmezat.NavigationFragments;
 
 import android.content.Context;
 import android.os.Build;
@@ -18,8 +18,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.gocreative.tm.hemmezat.Adapters.AdminProductsAdapter;
-import com.gocreative.tm.hemmezat.Models.AllProducts;
+import com.gocreative.team.hemmezat.Adapters.AdminProductsAdapter;
+import com.gocreative.team.hemmezat.Models.AllProducts;
 import com.gocreative.tm.hemmezat.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;

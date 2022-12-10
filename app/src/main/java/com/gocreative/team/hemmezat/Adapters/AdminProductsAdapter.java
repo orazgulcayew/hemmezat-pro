@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.Adapters;
+package com.gocreative.team.hemmezat.Adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -16,10 +16,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gocreative.team.hemmezat.Models.AllProducts;
+import com.gocreative.team.hemmezat.NavigationFragments.CategorySelectFragment;
+import com.gocreative.team.hemmezat.NavigationFragments.ProductDetailsFragment;
 import com.gocreative.team.hemmezat.R;
-import com.gocreative.tm.hemmezat.Models.AllProducts;
-import com.gocreative.tm.hemmezat.NavigationFragments.CategorySelectFragment;
-import com.gocreative.tm.hemmezat.NavigationFragments.ProductDetailsFragment;
 import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
@@ -41,14 +41,14 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
 
     @NonNull
     @Override
-    public AllProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AdminProductsAdapter.AllProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_list, parent, false);
         return new AllProductsViewHolder(view);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onBindViewHolder(@NonNull AllProductsViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull AdminProductsAdapter.AllProductsViewHolder holder, @SuppressLint("RecyclerView") int position) {
         String price = Float.toString(allProductsArrayList.get(position).getPrice());
         String firstImageUrl = allProductsArrayList.get(position).getImages().get(0);
         holder.nameView.setText(allProductsArrayList.get(position).getName());

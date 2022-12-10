@@ -24,10 +24,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gocreative.team.hemmezat.R;
 import com.gocreative.tm.hemmezat.Models.AllProducts;
 import com.gocreative.tm.hemmezat.NavigationFragments.CategorySelectFragment;
 import com.gocreative.tm.hemmezat.NavigationFragments.ProductDetailsFragment;
-import com.gocreative.tm.hemmezat.R;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
@@ -58,14 +58,14 @@ public class MyProductsAdapter extends RecyclerView.Adapter<MyProductsAdapter.Al
 
     @NonNull
     @Override
-    public MyProductsAdapter.AllProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AllProductsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_product_item_list, parent, false);
         return new AllProductsViewHolder(view);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public void onBindViewHolder(@NonNull MyProductsAdapter.AllProductsViewHolder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull AllProductsViewHolder holder, @SuppressLint("RecyclerView") int position) {
         String price = Float.toString(allProductsArrayList.get(position).getPrice());
         String firstImageUrl = allProductsArrayList.get(position).getImages().get(0);
         holder.nameView.setText(allProductsArrayList.get(position).getName());

@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.Adapters;
+package com.gocreative.team.hemmezat.Adapters;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.gocreative.team.hemmezat.Models.SubCategory;
+import com.gocreative.team.hemmezat.NavigationFragments.AddProductFragment;
+import com.gocreative.team.hemmezat.NavigationFragments.CategorySelectFragment;
 import com.gocreative.team.hemmezat.R;
-import com.gocreative.tm.hemmezat.Models.SubCategory;
-import com.gocreative.tm.hemmezat.NavigationFragments.AddProductFragment;
-import com.gocreative.tm.hemmezat.NavigationFragments.CategorySelectFragment;
 
 import java.util.ArrayList;
 

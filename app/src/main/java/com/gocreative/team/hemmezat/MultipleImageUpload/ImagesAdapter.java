@@ -1,4 +1,4 @@
-package com.gocreative.tm.hemmezat.MultipleImageUpload;
+package com.gocreative.team.hemmezat.MultipleImageUpload;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
